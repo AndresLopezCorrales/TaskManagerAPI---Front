@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/tasks';
+const API_URL = 'taskmanagerapi-production-2ccf.up.railway.app';
 
 // GET /tasks
 export async function fetchTasks() {
