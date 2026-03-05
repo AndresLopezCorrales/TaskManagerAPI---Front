@@ -1,4 +1,4 @@
-const API_URL = 'taskmanagerapi-production-2ccf.up.railway.app';
+const API_URL = 'https://taskmanagerapi-production-2ccf.up.railway.app/tasks';
 
 // GET /tasks
 export async function fetchTasks() {
