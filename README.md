@@ -2,6 +2,10 @@
 
 Interfaz web para consumir la Task Manager API. Construida con HTML, Tailwind CSS v3 y JavaScript modular (ES Modules).
 
+## Página Deployed
+
+- https://taskmanagerapifront.netlify.app/
+
 ## Screenshots
 
 <img src="./src/img/app.png" width="800"/>
