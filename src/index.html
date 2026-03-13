@@ -11,7 +11,7 @@
 <body class="bg-slate-50 text-neutral-100 min-h-screen flex flex-col items-center px-4 pt-14 pb-28">
 
     <!-- Header -->
-    <header class="w-full max-w-xl mb-12">
+    <header class="w-full max-w-xl mb-4">
         <h1 class="text-5xl md:text-6xl font-extralight text-violet-900 leading-none tracking-tight">
             YET ANOTHER <br> TODO LIST APP
         </h1>
@@ -20,6 +20,18 @@
 
     <!-- Main -->
     <main class="w-full max-w-xl">
+
+        <button id="btn-logout"
+            class="flex items-center gap-2 bg-red-600 text-white px-4 py-2 m-2 rounded-full hover:bg-red-700 transition">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-5 h-5">
+
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6A2.25 2.25 0 005.25 5.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3-3l-3-3m3 3l-3 3m3-3H9" />
+            </svg>
+            Logout
+        </button>
 
         <section class="bg-violet-800 border border-violet-950 rounded-xl p-5 mb-6">
             <div class="flex gap-3">
@@ -62,6 +74,8 @@
                         </b>
                         <span class="mt-2 text-sm">Pendientes</span>
                     </div>
+
+
 
                 </div>
 

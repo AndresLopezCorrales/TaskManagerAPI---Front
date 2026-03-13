@@ -1,4 +1,6 @@
 import { fetchTasks, createTask } from './api.js';
+import { logout } from './auth/auth.js';
+import { isAuthenticated } from './auth/authCheck.js';
 import { renderTasks } from './render.js';
 import { showToast } from './toast.js';
 
@@ -37,7 +39,14 @@ async function addTask() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    const logged = await isAuthenticated();
+
+    if (!logged) {
+        window.location.href = "./views/auth.html";
+        return;
+    }
+
     loadTasks();
 
     document.getElementById('btn-add').addEventListener('click', addTask);
@@ -45,4 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('task-input').addEventListener('keydown', e => {
         if (e.key === 'Enter') addTask();
     });
+
+    document.getElementById("btn-logout")
+        .addEventListener("click", async () => {
+
+            await logout();
+
+            window.location.href = "./views/auth.html";
+
+        });
 });
