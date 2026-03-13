@@ -46,7 +46,7 @@ registerTab.addEventListener("click", () => {
 
     mode = "register";
 
-    submitBtn.textContent = "Register";
+    submitBtn.textContent = "Registrarse";
 
     // activar tab register
     registerTab.classList.add("bg-[#8B5CF6]");
