@@ -8,6 +8,7 @@ Interfaz web para consumir la Task Manager API. Construida con HTML, Tailwind CS
 
 ## Screenshots
 
+<img src="./src/img/login.png" width="800"/>
 <img src="./src/img/app.png" width="800"/>
 
 ## Tecnologías
@@ -62,6 +63,8 @@ const API_URL = 'https://tu-api.up.railway.app/tasks';
 - Notificaciones toast para cada acción
 - Textos largos con scroll sin romper el layout
 - Sin `innerHTML` con datos del usuario (protección XSS)
+- Login y Registro de usuarios
+- Cada usuario tiene su propia lista
 
 ## Deploy en Netlify
 
