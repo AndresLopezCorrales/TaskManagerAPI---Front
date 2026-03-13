@@ -10,6 +10,12 @@ const submitBtn = document.getElementById("submit-btn");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+        window.location.reload();
+    }
+});
+
 document.addEventListener("DOMContentLoaded", async () => {
 
     const logged = await isAuthenticated();
